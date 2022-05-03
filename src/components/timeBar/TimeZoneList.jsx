@@ -4,7 +4,7 @@ import TimeZoneItem from './TimeZoneItem';
 import MainTimeZoneContext from '../../context/MainTimeZoneContext';
 
 const TimeZoneList = props => {
-    const { timeZoneList = [], deleteTimeZone, changeMain } = props;
+    const { timeZoneList = [], deleteTimeZone } = props;
 
     const { dateTime } = useContext(MainTimeZoneContext)
     const [hourSelectorPosition, setHourSelectorPosition] = useState();
